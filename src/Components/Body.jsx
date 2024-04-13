@@ -1,10 +1,7 @@
-import ResCards from "./ResComponents/ResCards";
+import Restaurant from "./ResComponents/Restaurant";
+
 const Body = () => {
-  return (
-    <div>
-      <ResCards />
-    </div>
-  );
+  return <Restaurant />;
 };
 
 export default Body;
