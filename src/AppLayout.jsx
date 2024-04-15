@@ -7,6 +7,7 @@ import Search from "./Components/Search";
 import SignIn from "./SignIn";
 import Help from "./Components/Help";
 import Cart from "./Components/Cart";
+import ResDetails from "./Components/ResComponents/ResDetails";
 
 function AppLayout() {
   return (
@@ -20,6 +21,7 @@ function AppLayout() {
           <Route path="/signin" Component={SignIn} />
           <Route path="/help" Component={Help} />
           <Route path="/cart" Component={Cart} />
+          <Route path="/resmenu/:resId" Component={ResDetails} />
         </Routes>
         <Footer />
       </div>

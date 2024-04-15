@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ResCard from "./ResCard";
+import { Link } from "react-router-dom";
 
 const Restaurant = () => {
   const [resList, setResList] = useState([]);
@@ -21,7 +22,9 @@ const Restaurant = () => {
   return (
     <div className="flex flex-wrap">
       {resList.map((res) => (
-        <ResCard data={res} key={res.info.id} />
+        <Link key={res.info.id} to={`resmenu/${res.info.id}`}>
+          <ResCard data={res} />
+        </Link>
       ))}
     </div>
   );
