@@ -15,7 +15,7 @@ const Restaurant = () => {
     const data = await response.json();
     const newList =
       data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants;
-    console.log(newList);
+    //console.log(newList);
     setResList(newList);
   };
   return (

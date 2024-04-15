@@ -3,7 +3,7 @@
 const ResCard = ({ data }) => {
   return (
     <div>
-      <div className="w-60 h-80 p-2 m-10 bg-gray-200 transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+      <div className="w-60 h-auto p-2 m-10 bg-gray-200 transform hover:scale-105 transition-transform duration-300 cursor-pointer">
         <img
           className="w-56 h-36 rounded-lg"
           src={
